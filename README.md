@@ -3,14 +3,10 @@
 ## Lab 1
 
 ### App Description
-`TODO://` Basic flashcards application that allows you to tap on a card and get an answer!
+asic flashcards application that allows you to tap on a card and get an answer!
 
 ### App Walk-though
-`TODO://`
-
-<img src="YOUR_GIF_URL_HERE" width=200><br>
-
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
+<img src="https://github.com/Queenie-Lau/Flashcards/blob/main/lab1-gif.gif" width=200><br>
 
 ## Required
 - [X] Create New Project in Xcode
