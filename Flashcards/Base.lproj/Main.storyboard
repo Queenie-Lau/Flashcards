@@ -52,6 +52,24 @@
                                     <segue destination="gFL-uN-krR" kind="presentation" id="lqb-HY-Csh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLp-vD-4iI">
+                                <rect key="frame" x="306" y="764" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="tappedOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwM-Fd-gUb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkt-yH-70J">
+                                <rect key="frame" x="73" y="764" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="tappedOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mm5-cb-kfH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,6 +78,8 @@
                     <connections>
                         <outlet property="backLabel" destination="3F2-PZ-5vO" id="rAk-iB-hdG"/>
                         <outlet property="frontLabel" destination="Ud9-wu-ZHS" id="rrO-ak-jhu"/>
+                        <outlet property="nextButton" destination="WLp-vD-4iI" id="a10-Wb-6cr"/>
+                        <outlet property="prevButton" destination="Gkt-yH-70J" id="QSk-bK-eYw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,6 +88,8 @@
                         <action selector="didTapOnFlashcard:" destination="BYZ-38-t0r" id="04j-7p-Mge"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="qfv-Oo-Skr"/>
+                <tapGestureRecognizer id="S5Q-oy-GMV"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
         </scene>
