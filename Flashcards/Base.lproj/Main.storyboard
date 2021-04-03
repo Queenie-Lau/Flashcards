@@ -43,31 +43,30 @@
                                     <outletCollection property="gestureRecognizers" destination="jnV-pm-PR7" appends="YES" id="XDv-WA-ZTs"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa7-NS-qOv">
-                                <rect key="frame" x="187" y="734" width="40" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa7-NS-qOv">
+                                <rect key="frame" x="169" y="747" width="75" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" title="+" image="addButton"/>
                                 <connections>
                                     <segue destination="gFL-uN-krR" kind="presentation" id="lqb-HY-Csh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLp-vD-4iI">
-                                <rect key="frame" x="306" y="764" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkt-yH-70J">
+                                <rect key="frame" x="61" y="746" width="100" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="tappedOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwM-Fd-gUb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkt-yH-70J">
-                                <rect key="frame" x="73" y="764" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <state key="normal" title="Prev"/>
+                                <state key="normal" title="Prev" image="arrowLeft"/>
                                 <connections>
                                     <action selector="tappedOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mm5-cb-kfH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLp-vD-4iI">
+                                <rect key="frame" x="269" y="746" width="65" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Next" image="arrowRight"/>
+                                <connections>
+                                    <action selector="tappedOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwM-Fd-gUb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,6 +76,7 @@
                     <navigationItem key="navigationItem" id="UuW-ST-nRl"/>
                     <connections>
                         <outlet property="backLabel" destination="3F2-PZ-5vO" id="rAk-iB-hdG"/>
+                        <outlet property="card" destination="0OM-br-SGf" id="NH0-9E-Qcp"/>
                         <outlet property="frontLabel" destination="Ud9-wu-ZHS" id="rrO-ak-jhu"/>
                         <outlet property="nextButton" destination="WLp-vD-4iI" id="a10-Wb-6cr"/>
                         <outlet property="prevButton" destination="Gkt-yH-70J" id="QSk-bK-eYw"/>
@@ -160,6 +160,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addButton" width="64" height="64"/>
+        <image name="arrowLeft" width="64" height="64"/>
+        <image name="arrowRight" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
