@@ -48,3 +48,25 @@ Basic flashcards application that allows you to tap on a card and get an answer!
 - [ ] User can delete a flashcard
 - [ ] User can edit existing flashcard
 - [ ] User can store multiple choice questions
+
+📝 `NOTE` Paste this template at the top of your existing `README.md` file from the last lab.
+
+## Lab 4
+
+### App Description
+Added animations on the cards
+
+### App Walk-though
+<img src="https://github.com/Queenie-Lau/Flashcards/blob/main/lab4.gif" width=200><br>
+
+## Required
+- [X] User should see the app icon 
+- [X] User should see a splash screen
+- [X] User should see an flip animation when revealing the answer
+- [X] User should see a slide animation when going to the next flashcard
+- [X] User should see a slide animation when going to the previous flashcard
+- [X] Push code to GitHub
+## Optional
+- [ ] User should see a nicer flaschard with rounded corners, shadows, and animating when showing the first time
+- [ ] User should see all views properly layout when using the app on a phone of different sizes
+- [ ] Correct answer in multiple choice should be random
